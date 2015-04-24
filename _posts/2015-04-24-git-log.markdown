@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "Using git locally—Git log"
+date:   2015-04-24 16:00:00
+---
+
+From time to time, you’ll want to check the commit logs. You may use `git log` to check the log.
+
+There are different formats and filters you can apply to the log.
+
+## Time for Action—Viewing log
+
+1. Go into any working project with git version controlled.
+
+2. View the log with `git log`
+
+        $ git log
+        
+3. Use `--oneline` to view the log in minimal mode. (One line with only comment).
+
+        $ git log --oneline 
+        
+    
+## Exercise 1
+
+I prepared a git repo with several commits. Please use `git log` to view the commits. Try exploring different flags to view the differences.
+
+<iframe src='http://beginning-git-sandbox.herokuapp.com/?case=-git-log'></iframe>
+
+## Exercise 2
+
+I prepared a git repo with several commits. Please use `git log` to view the commits. Try exploring different flags to view the differences.
+
+<iframe src='http://beginning-git-sandbox.herokuapp.com/?case=3'></iframe>
+
+## Recourses
+
+[Git log](http://git-scm.com/docs/git-log)
