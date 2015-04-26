@@ -7,14 +7,27 @@
 
     {% include header.html %}
 
-    <div class="page-content">
+    <div id="main" class="page-content">
       <div class="wrapper">
         {{ content }}
       </div>
     </div>
 
     {% include footer.html %}
-
+  
+  <script src='http://code.jquery.com/jquery.min.js'></script>
+  <script src='js/smoothstate.js'></script>
+  <script>
+    ;(function($) {
+      $(function(){
+        console.log("here", $('#main'));
+        $('#main').smoothState({
+          prefetch: true,
+          pageCacheSize: 0,
+          // blacklist: ".no-smoothstate, [target]",
+        });    
+      });
+    })(jQuery);
+  </script>
   </body>
-
 </html>
