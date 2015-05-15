@@ -1,3 +1,11 @@
 #lang pollen
 
 index.html
+git-init.html
+git-log.html
+git-checkout.html
+git-branch.html
+git-merge.html
+git-config.html
+more-on-git-add.html
+learn-more.html

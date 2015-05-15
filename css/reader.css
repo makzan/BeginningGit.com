@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16pt;
+  padding: 5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/* Layout */
+
+article {
+  font-size: 16pt;
+  font-family: "adobe-caslon-pro", Georgia, serif;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  line-height: 1.45em;
+}
+h1, h2, h3, h4 {
+  font-family: "Gill Sans", Arial, sans-serif;
+  font-size: 1em;
+}
+h1 {
+  font-size: 1.5em;
+  border-top: 3px solid BLACK;
+  padding-top: 0.2em;
+  line-height: 0.9em;
+}
+
+h1 a,
+h2 a {
+  color: BLACK;
+  text-decoration: none;
+}
+h1 a:hover,
+h2 a:hover {
+  text-decoration: underline;
+}
+
+
+sidenote,
+aside {
+  display: block;
+
+  font-size: 0.7em;
+  line-height: 1.2em;
+  font-family: monospace;
+  float: left;
+  width: 50%;
+  padding: 0 1em 1em 1em;
+  color: GRAY;
+}
+
+@media screen and (min-width: 760px) {
+
+  article {
+    max-width: 720px;
+    margin-left: 270px;
+  }
+
+  sidenote,
+  aside{
+    margin-left: -270px;
+    width: 260px;
+    position: absolute;
+    text-align: right;
+    color: GRAY;
+  }
+
+}
+
+
+/* Nav */
+nav {
+  display: flex;
+  border-top: 1px solid LIGHTGRAY;
+  max-width: 1000px;
+  font-size: 0.8em;
+}
+nav > a,
+nav > a:visited{
+  display: block;
+  flex: 1;
+  line-height: 1.5em;
+  padding: 1em;
+  color: BLACK;
+  text-decoration: none;
+  text-decoration-skip: ink;
+  text-align: center;
+  border-left: 1px solid LIGHTGRAY;
+
+}
+nav > a:hover {
+  background: ALICEBLUE;
+  text-decoration: underline;
+}
+nav > a:nth-child(1) {
+  text-align: right;
+  border-left: none;
+}
+nav > a:last-child {
+  text-align: left;
+
+}
+
+/* Overlay Nav */
+.overlay {
+  width: 10%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: block;
+  -webkit-tap-highlight-color: rgba(20,20,20,.2);
+}
+.overlay.prev {
+  left: 0;
+}
+.overlay.next {
+  right: 0;
+}
+
+
+/* Code block */
+p code,
+li code{
+  font-size: 12pt;
+  background: #efefef;
+  padding: 5px;
+  margin: 2px;
+}
+pre {
+  font-size: 12pt;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+
+iframe {
+  border: 1px solid GREY;
+  width: 100%;
+  height: 600px;
+}
